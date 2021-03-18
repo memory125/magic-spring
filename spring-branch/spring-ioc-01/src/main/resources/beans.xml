@@ -5,6 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--定义bean-->
+    <bean id="userDaoImpl" class="com.wing.pojo.UserDaoImpl" />
     <bean id="mySQLImpl" class="com.wing.pojo.UserDaoMySQLImpl" />
     <bean id="sqlServerImpl" class="com.wing.pojo.UserDaoSQLServerImpl" />
 

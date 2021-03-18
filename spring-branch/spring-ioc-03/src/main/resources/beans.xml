@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF8"?> <!--这里的UTF-8出现异常，改成UTF8-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--定义bean-->
+    <!--第一种方式，有参构造注入参数：通过参数下标-->
+    <bean id="user1" class="com.wing.pojo.User">
+        <constructor-arg index="0" value="Tom"/>
+    </bean>
+
+    <!--第二种方式，有参构造注入参数：通过参数类型-->
+    <bean id="user2" class="com.wing.pojo.User">
+        <constructor-arg type="java.lang.String" value="Jimmy"/>
+    </bean>
+
+    <!--第三种方式，有参构造注入参数: 通过参数名-->
+    <bean id="user3" class="com.wing.pojo.User">
+       <constructor-arg name="name" value="Jack"/>
+    </bean>
+</beans>
