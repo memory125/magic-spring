@@ -1,6 +1,4 @@
-import com.wing.dao.UserDaoImpl;
-import com.wing.dao.UserDaoMySQLImpl;
-import com.wing.dao.UserDaoSQLServerImpl;
+import com.wing.pojo.UserDaoImpl;
 import com.wing.service.UserService;
 import com.wing.service.UserServiceImpl;
 import org.junit.Test;

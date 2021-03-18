@@ -1,4 +1,4 @@
-package com.wing.dao;
+package com.wing.pojo;
 
 /**
  * @author memory125
