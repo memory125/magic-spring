@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF8"?> <!--这里的UTF-8出现异常，改成UTF8-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--定义bean-->
+    <bean id="mySQLImpl" class="com.wing.pojo.UserDaoMySQLImpl" />
+    <bean id="sqlServerImpl" class="com.wing.pojo.UserDaoSQLServerImpl" />
+
+    <bean id="userServiceImpl" class="com.wing.service.UserServiceImpl">
+    <!--
+        ref: 引用Spring容器中创建号的对象
+        value: 具体的值，具体数据类型
+    -->
+        <property name="userDao" ref="mySQLImpl"/>
+<!--        <property name="userDao" ref="sqlServerImpl"/>-->
+    </bean>
+</beans>
