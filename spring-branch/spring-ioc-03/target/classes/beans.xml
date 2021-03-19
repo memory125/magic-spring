@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="UTF8"?> <!--ÕâÀïµÄUTF-8³öÏÖÒì³££¬¸Ä³ÉUTF8-->
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--¶¨Òåbean-->
-    <!--µÚÒ»ÖÖ·½Ê½£¬ÓÐ²Î¹¹Ôì×¢Èë²ÎÊý£ºÍ¨¹ý²ÎÊýÏÂ±ê-->
+    <!--å®šä¹‰bean-->
+    <!--ç¬¬ä¸€ç§æ–¹å¼ï¼Œæœ‰å‚æž„é€ æ³¨å…¥å‚æ•°ï¼šé€šè¿‡å‚æ•°ä¸‹æ ‡-->
     <bean id="user1" class="com.wing.pojo.User">
         <constructor-arg index="0" value="Tom"/>
     </bean>
 
-    <!--µÚ¶þÖÖ·½Ê½£¬ÓÐ²Î¹¹Ôì×¢Èë²ÎÊý£ºÍ¨¹ý²ÎÊýÀàÐÍ-->
+    <!--ç¬¬äºŒç§æ–¹å¼ï¼Œæœ‰å‚æž„é€ æ³¨å…¥å‚æ•°ï¼šé€šè¿‡å‚æ•°ç±»åž‹-->
     <bean id="user2" class="com.wing.pojo.User">
         <constructor-arg type="java.lang.String" value="Jimmy"/>
     </bean>
 
-    <!--µÚÈýÖÖ·½Ê½£¬ÓÐ²Î¹¹Ôì×¢Èë²ÎÊý: Í¨¹ý²ÎÊýÃû-->
+    <!--ç¬¬ä¸‰ç§æ–¹å¼ï¼Œæœ‰å‚æž„é€ æ³¨å…¥å‚æ•°: é€šè¿‡å‚æ•°å-->
     <bean id="user3" class="com.wing.pojo.User">
        <constructor-arg name="name" value="Jack"/>
     </bean>
+
+    <!--åˆ«å-->
+    <alias name="user1" alias="userNew1"/>
+    <alias name="user2" alias="userNew2"/>
+    <alias name="user3" alias="userNew3"/>
 </beans>

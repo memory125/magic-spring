@@ -9,13 +9,17 @@
         <module name="spring-ioc-03" />
         <module name="spring-ioc-02" />
         <module name="spring-ioc-01" />
+        <module name="spring-di-04" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-branch" target="1.5" />
+      <module name="spring-di" target="1.5" />
+      <module name="spring-di-04" target="1.5" />
       <module name="spring-ioc-01" target="1.5" />
       <module name="spring-ioc-02" target="1.5" />
       <module name="spring-ioc-03" target="1.5" />
+      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

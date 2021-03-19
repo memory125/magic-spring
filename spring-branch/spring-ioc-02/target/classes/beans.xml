@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF8"?> <!--ÕâÀïµÄUTF-8³öÏÖÒì³££¬¸Ä³ÉUTF8-->
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--¶¨Òåbean-->
+    <!--å®šä¹‰bean-->
     <!--
-    Ê¹ÓÃSpringÀ´´´½¨¶ÔÏó£¬ÔÚSpringÖÐÕâÐ©¶¼³ÆÎªBean
-    ÀàÐÍ ±äÁ¿Ãû = new ÀàÐÍ();
+    ä½¿ç”¨Springæ¥åˆ›å»ºå¯¹è±¡ï¼Œåœ¨Springä¸­è¿™äº›éƒ½ç§°ä¸ºBean
+    ç±»åž‹ å˜é‡å = new ç±»åž‹();
     Hello hello = new Hello();
 
-    id = ±äÁ¿Ãû
-    class = new µÄ¶ÔÏó
-    property Ïàµ±ÓÚ¸ø¶ÔÏóÖÐµÄÊôÐÔÉèÖÃÒ»¸öÖµ
+    id = å˜é‡å
+    class = new çš„å¯¹è±¡
+    property ç›¸å½“äºŽç»™å¯¹è±¡ä¸­çš„å±žæ€§è®¾ç½®ä¸€ä¸ªå€¼
     -->
     <bean id="hello" class="com.wing.pojo.Hello">
         <property name="str" value="Spring"/>

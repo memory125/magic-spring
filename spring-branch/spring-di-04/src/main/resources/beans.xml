@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--这里的UTF-8出现异常，改成UTF8-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--定义bean-->
+    <bean id="address" class="com.wing.pojo.Address">
+        <property name="postId" value="510001" />
+        <property name="addressInfo" value="广东省深圳市"/>
+    </bean>
+
+    <bean id="student" class="com.wing.pojo.Student">
+        <!--第一种，普通值注入，value-->
+        <property name="name" value="David"/>
+        <!--第二种，引用注入，ref-->
+        <property name="address" ref="address"/>
+        <!--第三种，数组注入，array-->
+        <property name="books">
+            <array>
+                <value>二十四史</value>
+                <value>史记</value>
+                <value>国语</value>
+                <value>论语</value>
+                <value>孙子兵法</value>
+                <value>资治通鉴</value>
+                <value>春秋</value>
+                <value>左传</value>
+                <value>挺经</value>
+                <value>冰鉴</value>
+                <value>庄子</value>
+                <value>管子</value>
+                <value>战国策</value>
+                <value>德道经</value>
+            </array>
+        </property>
+        <!--第四种，List-->
+        <property name="hobbies">
+            <list>
+                <value>听歌</value>
+                <value>看电影</value>
+                <value>码代码</value>
+                <value>撩妹</value>
+                <value>摄影</value>
+            </list>
+        </property>
+        <!--第五种，Map-->
+        <property name="idCards">
+            <map>
+                <entry key="身份证" value="111111222222223333"/>
+                <entry key="学生证" value="2021031920"/>
+                <entry key="饭卡" value="D45641564E"/>
+                <entry key="门禁卡" value="O56654651F"/>
+                <entry key="工卡" value="T2021031908E"/>
+            </map>
+        </property>
+
+        <!--第六种，Set-->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>王者荣耀</value>
+                <value>刺激战场</value>
+                <value>绝地求生</value>
+                <value>英雄联盟</value>
+                <value>狂野时速</value>
+                <value>冰封王座</value>
+                <value>魔兽争霸</value>
+            </set>
+        </property>
+
+        <!--第七种，null-->
+        <property name="house">
+            <null/>
+        </property>
+
+        <!--第八种，Properties-->
+        <property name="info">
+            <props>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/mydb</prop>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>
