@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/magic-spring.iml" filepath="$PROJECT_DIR$/.idea/magic-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-autowire-05/spring-autowire-05.iml" filepath="$PROJECT_DIR$/spring-branch/spring-autowire-05/spring-autowire-05.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-branch.iml" filepath="$PROJECT_DIR$/spring-branch/spring-branch.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-di-04/spring-di-04.iml" filepath="$PROJECT_DIR$/spring-branch/spring-di-04/spring-di-04.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" />

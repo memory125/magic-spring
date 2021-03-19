@@ -13,6 +13,7 @@
         <module>spring-ioc-02</module>
         <module>spring-ioc-03</module>
         <module>spring-di-04</module>
+        <module>spring-autowire-05</module>
     </modules>
 
     <dependencies>
