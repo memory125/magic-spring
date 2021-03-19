@@ -51,6 +51,13 @@ public class MyTest {
         Person person1 = context.getBean("person1", Person.class);
         System.out.println(person1.toString());
 
+        Person person3 = context.getBean("person3", Person.class);
+        System.out.println(person3.toString());
+
+        System.out.println("person1: " + person1);
+        System.out.println("person3" + person3);
+        System.out.println("person1 == person3 ?? " + (person1 == person3));
+
         Person person2 = context.getBean("person2", Person.class);
         System.out.println(person2.toString());
     }

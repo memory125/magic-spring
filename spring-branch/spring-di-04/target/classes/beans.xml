@@ -13,8 +13,10 @@
     <bean id="student" class="com.wing.pojo.Student">
         <!--第一种，普通值注入，value-->
         <property name="name" value="David"/>
+
         <!--第二种，引用注入，ref-->
         <property name="address" ref="address"/>
+
         <!--第三种，数组注入，array-->
         <property name="books">
             <array>
@@ -34,6 +36,7 @@
                 <value>德道经</value>
             </array>
         </property>
+
         <!--第四种，List-->
         <property name="hobbies">
             <list>
@@ -44,6 +47,7 @@
                 <value>摄影</value>
             </list>
         </property>
+
         <!--第五种，Map-->
         <property name="idCards">
             <map>
