@@ -1,5 +1,6 @@
 package com.wing.test;
 
+import com.wing.pojo.Person;
 import com.wing.pojo.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -41,5 +42,16 @@ public class MyTest {
               }
           }
          */
+    }
+
+    @Test
+    public void testPerson() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("personbean.xml");
+
+        Person person1 = context.getBean("person1", Person.class);
+        System.out.println(person1.toString());
+
+        Person person2 = context.getBean("person2", Person.class);
+        System.out.println(person2.toString());
     }
 }
