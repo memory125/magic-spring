@@ -15,5 +15,31 @@ public class MyTest {
 
         Student student = (Student) context.getBean("student");
         System.out.println(student.toString());
+        /*
+          Student
+          {   name='David',
+              address=Address{
+                  postId=510001,
+                  addressInfo='广东省深圳市'
+              },
+              books=[二十四史, 史记, 国语, 论语, 孙子兵法, 资治通鉴, 春秋, 左传, 挺经, 冰鉴, 庄子, 管子, 战国策, 德道经],
+              hobbies=[听歌, 看电影, 码代码, 撩妹, 摄影],
+              idCards={
+                  身份证=111111222222223333,
+                  学生证=2021031920,
+                  饭卡=D45641564E,
+                  门禁卡=O56654651F,
+                  工卡=T2021031908E
+              },
+              games=[LOL, 王者荣耀, 刺激战场, 绝地求生, 英雄联盟, 狂野时速, 冰封王座, 魔兽争霸],
+              house='null',
+              info={
+                password=123456,
+                url=jdbc:mysql://localhost:3306/mydb,
+                driver=com.mysql.cj.jdbc.Driver,
+                username=root
+              }
+          }
+         */
     }
 }
