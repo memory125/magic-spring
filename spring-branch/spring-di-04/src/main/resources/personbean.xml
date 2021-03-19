@@ -7,8 +7,8 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--p命名空间注入，可以直接注入属性的值：property，作用域默认是singleton-->
-    <bean id="person1" class="com.wing.pojo.Person" p:name="Jerry" p:age="36" p:gender="Male" scope="prototype"/>
-    <bean id="person3" class="com.wing.pojo.Person" p:name="Tom" p:age="38" p:gender="Male" scope="singleton"/>
+    <bean id="person1" class="com.wing.pojo.Person" p:name="Jerry" p:age="36" p:gender="Male" scope="singleton"/>
+    <bean id="person3" class="com.wing.pojo.Person" p:name="Tom" p:age="38" p:gender="Male" scope="prototype"/>
 
     <!--c命名空间注入，通过构造器注入：construct-args, 作用域默认是singleton-->
     <bean id="person2" class="com.wing.pojo.Person" c:name="Jane" c:age="35" c:gender="Female" scope="singleton"/>

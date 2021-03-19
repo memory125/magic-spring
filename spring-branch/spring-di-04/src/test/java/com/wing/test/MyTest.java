@@ -48,17 +48,20 @@ public class MyTest {
     public void testPerson() {
         ApplicationContext context = new ClassPathXmlApplicationContext("personbean.xml");
 
+        // 单列模式
         Person person1 = context.getBean("person1", Person.class);
         System.out.println(person1.toString());
 
-        Person person3 = context.getBean("person3", Person.class);
-        System.out.println(person3.toString());
-
-        System.out.println("person1: " + person1);
-        System.out.println("person3" + person3);
-        System.out.println("person1 == person3 ?? " + (person1 == person3));
-
+        // 单例模式
         Person person2 = context.getBean("person2", Person.class);
         System.out.println(person2.toString());
+
+
+        // 原型
+        Person person3 = context.getBean("person3", Person.class);
+        Person person4 = context.getBean("person3", Person.class);
+        System.out.println("person3: " + person3);
+        System.out.println("person4: " + person4);
+        System.out.println("person3 == person4 ?? " + (person3 == person4));
     }
 }
