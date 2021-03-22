@@ -15,6 +15,6 @@
 
     <bean id="dog" class="com.wing.pojo.Dog" />
     <bean id="cat" class="com.wing.pojo.Cat" />
-    <bean id="person" class="com.wing.pojo.Person"/>
+    <bean id="person" class="com.wing.pojo.Person2"/>
 
 </beans>

@@ -9,6 +9,9 @@
         <fileset id="fileset2" name="Spring Autowired 05" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-05.xml</file>
         </fileset>
+        <fileset id="fileset3" name="Spring Autowired 02" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-02.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

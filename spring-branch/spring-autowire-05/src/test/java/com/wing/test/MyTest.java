@@ -1,6 +1,8 @@
 package com.wing.test;
 
 import com.wing.pojo.Person;
+import com.wing.pojo.Person2;
+import com.wing.pojo.Person3;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -24,9 +26,18 @@ public class MyTest {
 
     @Test
     public void testPerson2() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-autowired-05.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-autowired-01.xml");
 
-        Person person = context.getBean("person", Person.class);
+        Person2 person = context.getBean("person", Person2.class);
+        person.getCat().shout();
+        person.getDog().shout();
+    }
+
+    @Test
+    public void testPerson3() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-autowired-02.xml");
+
+        Person3 person = context.getBean("person", Person3.class);
         person.getCat().shout();
         person.getDog().shout();
     }
