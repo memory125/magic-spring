@@ -12,8 +12,9 @@
 
     <!--开启autowired属性-->
     <context:annotation-config />
-    <!--指定要扫描的包，这个包下的注解就会生效-->
-<!--    <context:component-scan base-package="com.wing.pojo"/>-->
-    <context:component-scan base-package="com.wing"/>
+
+    <bean id="dog" class="com.wing.pojo.Dog" />
+    <bean id="cat" class="com.wing.pojo.Cat" />
+    <bean id="person" class="com.wing.pojo.Person2"/>
 
 </beans>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 // @Component 等价于<bean id="user" class="com.wing.pojo.User" />
 @Component
 public class User {
+    // 相当于 <property name="name" value="Tom" />
     @Value("Tom")
     private String name;
     @Value("1")
