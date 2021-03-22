@@ -11,11 +11,13 @@
         <module name="spring-ioc-02" />
         <module name="spring-ioc-01" />
         <module name="spring-di-04" />
+        <module name="spring-appconfig-07" />
         <module name="spring-autowire-05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-annotation-06" target="1.5" />
+      <module name="spring-appconfig-07" target="1.5" />
       <module name="spring-autowire-05" target="1.5" />
       <module name="spring-branch" target="1.5" />
       <module name="spring-di" target="1.5" />
