@@ -14,6 +14,7 @@
         <module>spring-ioc-03</module>
         <module>spring-di-04</module>
         <module>spring-autowire-05</module>
+        <module>spring-annotation-06</module>
     </modules>
 
     <dependencies>
