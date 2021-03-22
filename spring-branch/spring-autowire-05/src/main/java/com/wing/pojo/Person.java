@@ -1,11 +1,15 @@
 package com.wing.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * @author memory125
  */
 public class Person {
     private String name;
+    @Autowired
     private Dog dog;
+    @Autowired
     private Cat cat;
 
     public String getName() {

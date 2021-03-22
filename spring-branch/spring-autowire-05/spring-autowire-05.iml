@@ -6,6 +6,9 @@
         <fileset id="fileset" name="Beans" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/beans.xml</file>
         </fileset>
+        <fileset id="fileset2" name="Spring Autowired 05" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-05.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
