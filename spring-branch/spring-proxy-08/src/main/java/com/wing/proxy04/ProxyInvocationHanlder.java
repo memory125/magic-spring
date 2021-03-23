@@ -1,27 +1,25 @@
-package com.wing.proxy03;
+package com.wing.proxy04;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-import com.wing.proxy03.Rent;
-
 /**
  * @author memory125
  */
-// 动态生成代理类
+// 动态代理通用模板 - 动态生成代理类
 public class ProxyInvocationHanlder implements InvocationHandler {
 
     // 被代理的接口
-    private Rent rent;
+    private Object target;
 
-    public void setRent(Rent rent) {
-        this.rent = rent;
+    public void setTarget(Object target) {
+        this.target = target;
     }
 
     // 生成得到代理类
     public Object getProxy() {
-        return Proxy.newProxyInstance(this.getClass().getClassLoader(), rent.getClass().getInterfaces(), this);
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
 
     /**
@@ -71,23 +69,13 @@ public class ProxyInvocationHanlder implements InvocationHandler {
      */
     // 处理代理实例，并返回结果
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        checkHouse();
+        logInfo(method.getName());
         // 动态代理的本质，就是使用反射机制实现
-        Object result = method.invoke(rent, args);
-        signContract();
-        chargeRent();
+        Object result = method.invoke(target, args);
         return result;
     }
 
-    public void checkHouse() {
-        System.out.println("Agent takes tenant to watch the house! ");
-    }
-
-    public void signContract() {
-        System.out.println("Agent signed the contract with tenant! ");
-    }
-
-    public void chargeRent() {
-        System.out.println("Agent collects the rent from tenant! ");
+    public void logInfo(String info) {
+        System.out.println("Method " + info + " is running!!");
     }
 }
