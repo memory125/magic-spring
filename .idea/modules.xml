@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-02/spring-ioc-02.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-02/spring-ioc-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-03/spring-ioc-03.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-03/spring-ioc-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-proxy-08/spring-proxy-08.iml" filepath="$PROJECT_DIR$/spring-branch/spring-proxy-08/spring-proxy-08.iml" />
     </modules>
   </component>
 </project>

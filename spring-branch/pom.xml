@@ -16,6 +16,7 @@
         <module>spring-autowire-05</module>
         <module>spring-annotation-06</module>
         <module>spring-appconfig-07</module>
+        <module>spring-proxy-08</module>
     </modules>
 
     <dependencies>
