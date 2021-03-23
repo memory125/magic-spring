@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/magic-spring.iml" filepath="$PROJECT_DIR$/.idea/magic-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-annotation-06/spring-annotation-06.iml" filepath="$PROJECT_DIR$/spring-branch/spring-annotation-06/spring-annotation-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-aop-09/spring-aop-09.iml" filepath="$PROJECT_DIR$/spring-branch/spring-aop-09/spring-aop-09.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-appconfig-07/spring-appconfig-07.iml" filepath="$PROJECT_DIR$/spring-branch/spring-appconfig-07/spring-appconfig-07.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-autowire-05/spring-autowire-05.iml" filepath="$PROJECT_DIR$/spring-branch/spring-autowire-05/spring-autowire-05.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-branch.iml" filepath="$PROJECT_DIR$/spring-branch/spring-branch.iml" />

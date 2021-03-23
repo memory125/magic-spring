@@ -17,6 +17,7 @@
         <module>spring-annotation-06</module>
         <module>spring-appconfig-07</module>
         <module>spring-proxy-08</module>
+        <module>spring-aop-09</module>
     </modules>
 
     <dependencies>
@@ -31,6 +32,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.3.5</version>
+        </dependency>
+        <!--aspectjweaver依赖包-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.6</version>
         </dependency>
         <!--JUnit依赖包-->
         <dependency>
