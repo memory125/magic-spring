@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,6 +12,7 @@
         <module name="spring-ioc-02" />
         <module name="spring-proxy-08" />
         <module name="spring-ioc-01" />
+        <module name="spring-mybatis-10" />
         <module name="spring-di-04" />
         <module name="spring-appconfig-07" />
         <module name="spring-autowire-05" />
@@ -28,6 +30,7 @@
       <module name="spring-ioc-01" target="1.5" />
       <module name="spring-ioc-02" target="1.5" />
       <module name="spring-ioc-03" target="1.5" />
+      <module name="spring-mybatis-10" target="1.5" />
       <module name="spring-proxy-08" target="1.5" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
