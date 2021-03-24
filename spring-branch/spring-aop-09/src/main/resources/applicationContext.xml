@@ -20,12 +20,22 @@
 
     <!--方式一：使用原生Spring API接口-->
     <!--配置aop：需要导入aop的约束，重点-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;切入点：expression：表达式，execution(要执行的位置 * * * * *)&ndash;&gt;-->
+<!--        <aop:pointcut id="userServiceCut" expression="execution(* com.wing.service.UserServiceImpl.*(..))"/>-->
+<!--        &lt;!&ndash;执行环绕增加&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="afterLog" pointcut-ref="userServiceCut"/>-->
+<!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="userServiceCut"/>-->
+<!--    </aop:config>-->
+
+    <!--方式二：自定义AOP-->
+    <bean id="advice" class="com.wing.slefadvice.AopAdvice"/>
     <aop:config>
-        <!--切入点：expression：表达式，execution(要执行的位置 * * * * *)-->
         <aop:pointcut id="userServiceCut" expression="execution(* com.wing.service.UserServiceImpl.*(..))"/>
-        <!--执行环绕增加-->
-        <aop:advisor advice-ref="afterLog" pointcut-ref="userServiceCut"/>
-        <aop:advisor advice-ref="beforeLog" pointcut-ref="userServiceCut"/>
+        <aop:aspect id="selfPoint" ref="advice">
+            <aop:after method="after" pointcut-ref="userServiceCut"/>
+            <aop:before method="before" pointcut-ref="userServiceCut"/>
+        </aop:aspect>
     </aop:config>
 
 </beans>
