@@ -5,6 +5,8 @@ import com.wing.pojo.User;
 import com.wing.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
@@ -13,7 +15,7 @@ import java.util.List;
  */
 public class MyTest {
     @Test
-    public void testQueryAllUsers() {
+    public void testQueryAllUsers1() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
 
         // 获取mapper对象
@@ -25,5 +27,15 @@ public class MyTest {
 
         // 关闭sql连接
         sqlSession.close();
+    }
+
+    @Test
+    public void testQueryAllUsers2() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper userMapper = context.getBean("userMapper", UserMapper.class);
+        List<User> users = userMapper.getAllUsers();
+        for (User user : users) {
+            System.out.println(user);
+        }
     }
 }
