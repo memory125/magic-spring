@@ -28,17 +28,21 @@
 <!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="userServiceCut"/>-->
 <!--    </aop:config>-->
 
-    <!--方式二：自定义AOP-->
-    <bean id="advice" class="com.wing.slefadvice.AopAdvice"/>
-    <aop:config>
-        <!--自定义切面， ref要引用的类-->
-        <aop:aspect id="selfPoint" ref="advice">
-            <!--切入点-->
-            <aop:pointcut id="userServiceCut" expression="execution(* com.wing.service.UserServiceImpl.*(..))"/>
-            <!--通知-->
-            <aop:after method="after" pointcut-ref="userServiceCut"/>
-            <aop:before method="before" pointcut-ref="userServiceCut"/>
-        </aop:aspect>
-    </aop:config>
+    <!--方式二：自定义实现AOP-->
+<!--    <bean id="advice" class="com.wing.slefadvice.AopAdvice"/>-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;自定义切面， ref要引用的类&ndash;&gt;-->
+<!--        <aop:aspect id="selfPoint" ref="advice">-->
+<!--            &lt;!&ndash;切入点&ndash;&gt;-->
+<!--            <aop:pointcut id="userServiceCut" expression="execution(* com.wing.service.UserServiceImpl.*(..))"/>-->
+<!--            &lt;!&ndash;通知&ndash;&gt;-->
+<!--            <aop:after method="after" pointcut-ref="userServiceCut"/>-->
+<!--            <aop:before method="before" pointcut-ref="userServiceCut"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+    <!--方式三：使用注解方式实现AOP-->
+    <bean id="annotationCut" class="com.wing.slefadvice.AnnotationPointCut" />
+    <aop:aspectj-autoproxy/>
 
 </beans>
