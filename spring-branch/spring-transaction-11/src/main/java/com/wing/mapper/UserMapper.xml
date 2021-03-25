@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--Mapper核心配置-->
+<mapper namespace="com.wing.mapper.UserMapper">
+
+    <!--查询所有用户-->
+    <select id="queryUsers" resultType="user">
+        select * from wing.user
+    </select>
+
+    <!--获取所有用户-->
+    <select id="getAllUsers" resultType="user">
+        select * from wing.user
+    </select>
+
+    <!--添加用户-->
+    <insert id="addUser" parameterType="map">
+        insert into wing.user(id, name, pwd) values (#{id}, #{name}, #{pwd})
+    </insert>
+
+    <!--删除一个用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from wing.user where id = #{id}
+    </delete>
+
+
+</mapper>

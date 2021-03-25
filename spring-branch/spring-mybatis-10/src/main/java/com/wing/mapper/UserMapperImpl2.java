@@ -1,7 +1,6 @@
 package com.wing.mapper;
 
 import com.wing.pojo.User;
-import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 import java.util.List;

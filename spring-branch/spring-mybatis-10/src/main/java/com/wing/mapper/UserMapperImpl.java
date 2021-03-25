@@ -1,6 +1,7 @@
 package com.wing.mapper;
 
 import com.wing.pojo.User;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 
 import java.util.List;
@@ -20,5 +21,8 @@ public class UserMapperImpl implements UserMapper {
     public List<User> getAllUsers() {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         return mapper.getAllUsers();
+    }
+
+    public void setSqlSessionFactory(SqlSessionFactoryBean sqlSessionFactory) {
     }
 }
