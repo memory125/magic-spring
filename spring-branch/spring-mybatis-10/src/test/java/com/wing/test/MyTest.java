@@ -26,6 +26,7 @@ public class MyTest {
         }
 
         // 关闭sql连接
+
         sqlSession.close();
     }
 
@@ -33,6 +34,16 @@ public class MyTest {
     public void testQueryAllUsers2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserMapper userMapper = context.getBean("userMapper", UserMapper.class);
+        List<User> users = userMapper.getAllUsers();
+        for (User user : users) {
+            System.out.println(user);
+        }
+    }
+
+    @Test
+    public void testQueryAllUsers3() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper userMapper = context.getBean("userMapper2", UserMapper.class);
         List<User> users = userMapper.getAllUsers();
         for (User user : users) {
             System.out.println(user);
