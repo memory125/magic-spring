@@ -12,9 +12,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-01/spring-ioc-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-02/spring-ioc-02.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-02/spring-ioc-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-ioc-03/spring-ioc-03.iml" filepath="$PROJECT_DIR$/spring-branch/spring-ioc-03/spring-ioc-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-mybatis-10/spring-mybatis-10.iml" filepath="$PROJECT_DIR$/spring-branch/spring-mybatis-10/spring-mybatis-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-proxy-08/spring-proxy-08.iml" filepath="$PROJECT_DIR$/spring-branch/spring-proxy-08/spring-proxy-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-transaction-11/spring-transaction-11.iml" filepath="$PROJECT_DIR$/spring-branch/spring-transaction-11/spring-transaction-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" />
     </modules>
   </component>
 </project>
