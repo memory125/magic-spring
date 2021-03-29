@@ -6,7 +6,7 @@
     <!--注册Servlet-->
     <servlet>
         <servlet-name>Hello</servlet-name>
-        <servlet-class>com.wing.servlet.HelloServlet</servlet-class>
+        <servlet-class>com.wing.controller.HelloServlet</servlet-class>
     </servlet>
     <!--Servlet映射-->
     <servlet-mapping>

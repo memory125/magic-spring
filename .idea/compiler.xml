@@ -7,17 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-02-hellomvc" />
         <module name="spring-ioc-03" />
         <module name="spring-annotation-06" />
         <module name="spring-ioc-02" />
         <module name="spring-proxy-08" />
         <module name="spring-ioc-01" />
-        <module name="spring-mybatis-10" />
-        <module name="spring-transaction-11" />
         <module name="spring-di-04" />
-        <module name="spring-appconfig-07" />
         <module name="spring-autowire-05" />
         <module name="spring-aop-09" />
+        <module name="spring-mybatis-10" />
+        <module name="spring-transaction-11" />
+        <module name="spring-appconfig-07" />
         <module name="springmvc-01-servlet" />
       </profile>
     </annotationProcessing>
@@ -37,6 +38,7 @@
       <module name="spring-proxy-08" target="1.5" />
       <module name="spring-transaction-11" target="1.5" />
       <module name="springmvc-01-servlet" target="1.5" />
+      <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
