@@ -18,5 +18,8 @@ Spring framework, Spring Boot and even Spring Cloud...
         - `Autowire` via configuration file.
         -  `Autowired` via Java source code.
 
+## SpringMVC
+- Review the Servlet application.
+
 ## Spring Boot
 ## Spring Cloud

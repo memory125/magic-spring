@@ -12,6 +12,7 @@
         <module>springmvc-01-servlet</module>
     </modules>
 
+
     <dependencies>
         <!--spring-webmvc-->
         <dependency>
@@ -40,10 +41,10 @@
         <!-- JSP依赖 -->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.3</version>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
         </dependency>
-        <!--JSTL表达式依赖 -->
+       <!--JSTL表达式依赖 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>

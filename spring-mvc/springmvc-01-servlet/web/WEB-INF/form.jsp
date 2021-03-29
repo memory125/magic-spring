@@ -4,6 +4,10 @@
     <title>Title</title>
 </head>
 <body>
-    ${msg}
+    <form action="/hello" method="post">
+        <input type="text" name="method">
+        <input type="submit">
+    </form>
+
 </body>
 </html>

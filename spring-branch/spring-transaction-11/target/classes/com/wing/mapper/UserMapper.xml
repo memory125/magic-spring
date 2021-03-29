@@ -22,7 +22,7 @@
 
     <!--删除一个用户-->
     <delete id="deleteUser" parameterType="int">
-        deletes from wing.user where id = #{id}
+        delete from wing.user where id = #{id}
     </delete>
 
 
