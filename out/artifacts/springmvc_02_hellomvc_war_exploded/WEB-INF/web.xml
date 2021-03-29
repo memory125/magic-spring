@@ -5,7 +5,7 @@
          version="4.0">
     <!--1.注册DispatcherServlet-->
     <servlet>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>hellomvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!--关联一个springmvc的配置文件:【servlet-name】-servlet.xml-->
         <init-param>
@@ -16,12 +16,10 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!--
-     匹配所有的请求；（不包括.jsp）
-     /* 匹配所有的请求；（包括.jsp）
-     -->
+    <!--/ 匹配所有的请求；（不包括.jsp）-->
+    <!--/* 匹配所有的请求；（包括.jsp）-->
     <servlet-mapping>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>hellomvc</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>

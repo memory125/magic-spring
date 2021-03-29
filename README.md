@@ -20,6 +20,8 @@ Spring framework, Spring Boot and even Spring Cloud...
 
 ## SpringMVC
 - Review the Servlet application.
+- The basic concepts of SpringMVC.
+- Create SpringMVC sample project via IDEA.
 
 ## Spring Boot
 ## Spring Cloud
