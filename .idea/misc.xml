@@ -11,6 +11,7 @@
       <set>
         <option value="$PROJECT_DIR$/spring-branch/spring-di/pom.xml" />
         <option value="$PROJECT_DIR$/spring-branch/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/spring-03-annotation/pom.xml" />
       </set>
     </option>
   </component>

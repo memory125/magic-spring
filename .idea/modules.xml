@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-transaction-11/spring-transaction-11.iml" filepath="$PROJECT_DIR$/spring-branch/spring-transaction-11/spring-transaction-11.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-03-annotation/springmvc-03-annotation.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-03-annotation/springmvc-03-annotation.iml" />
     </modules>
   </component>
 </project>
