@@ -28,8 +28,8 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Controller02 is implemented via `SpringMVC Annotation`, obviously it is more convenient than `SpringMVC Controller`.
     - The configuration for `SpringMVC Annotation` is critical, please refer to the following configuration.
     ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
+       <?xml version="1.0" encoding="UTF-8"?>
+       <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -43,29 +43,30 @@ Spring framework, Spring Boot and even Spring Cloud...
        http://www.springframework.org/schema/cache
        http://www.springframework.org/schema/cache/spring-cache.xsd">
 
-    <!-- 自动扫描包，让指定包下的注解生效,由IOC容器统一管理 -->
-    <context:component-scan base-package="com.wing.controller"/>
-    <!-- 让Spring MVC不处理静态资源 -->
-    <mvc:default-servlet-handler />
-    <!--开启SpringMVC注解-->
-    <mvc:annotation-driven />
-    <!--开启SpringContext注解-->
-<!--    <context:annotation-config />-->
+        <!-- 自动扫描包，让指定包下的注解生效,由IOC容器统一管理 -->
+        <context:component-scan base-package="com.wing.controller"/>
+        <!-- 让Spring MVC不处理静态资源 -->
+        <mvc:default-servlet-handler />
+        <!--开启SpringMVC注解-->
+        <mvc:annotation-driven />
+        <!--开启SpringContext注解-->
+        <!--    <context:annotation-config />-->
 
-    <!-- 视图解析器 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          id="internalResourceViewResolver">
-        <!-- 前缀 -->
-        <property name="prefix" value="/WEB-INF/jsp/" />
-        <!-- 后缀 -->
-        <property name="suffix" value=".jsp" />
-    </bean>
+        <!-- 视图解析器 -->
+        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+              id="internalResourceViewResolver">
+            <!-- 前缀 -->
+            <property name="prefix" value="/WEB-INF/jsp/" />
+            <!-- 后缀 -->
+            <property name="suffix" value=".jsp" />
+        </bean>
 
-    <!--注册TestController01-->
-<!--    <bean id="/t1" class="com.wing.controller.TestController01"/>-->
+        <!--注册TestController01-->
+        <!--    <bean id="/t1" class="com.wing.controller.TestController01"/>-->
 
-</beans>
-``` - We can copy the above `xml` file as SpringMVC configure file.
+    </beans>
+``` 
+    - We can copy the above `xml` file as SpringMVC configure file.
 
 ## Spring Boot
 ## Spring Cloud
