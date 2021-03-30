@@ -65,7 +65,7 @@ Spring framework, Spring Boot and even Spring Cloud...
         <!--    <bean id="/t1" class="com.wing.controller.TestController01"/>-->
 
     </beans>
-``` 
+    ``` 
     - We can copy the above `xml` file as SpringMVC configure file.
 
 ## Spring Boot
