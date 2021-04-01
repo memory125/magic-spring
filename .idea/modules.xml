@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-03-annotation/springmvc-03-annotation.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-03-annotation/springmvc-03-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-04-controller/springmvc-04-controller.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-04-controller/springmvc-04-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-05-json/springmvc-05-json.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-05-json/springmvc-05-json.iml" />
     </modules>
   </component>
 </project>

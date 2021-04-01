@@ -17,6 +17,7 @@
         <module name="spring-di-04" />
         <module name="spring-autowire-05" />
         <module name="spring-aop-09" />
+        <module name="springmvc-05-json" />
         <module name="springmvc-03-annotation" />
         <module name="spring-mybatis-10" />
         <module name="spring-transaction-11" />
@@ -44,6 +45,7 @@
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
       <module name="springmvc-04-controller" target="1.5" />
+      <module name="springmvc-05-json" target="1.5" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
