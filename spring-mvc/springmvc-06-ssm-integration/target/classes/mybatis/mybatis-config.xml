@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--日志输出配置-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!--是否开启驼峰命名自动映射，即从经典数据库列名 A_COLUMN 映射到经典 Java 属性名aColum-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--全局性地开启或关闭所有映射器配置文件中已配置的任何缓存-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <!--给实体类配置别名-->
+    <typeAliases>
+        <package name="com.wing.pojo"/>
+    </typeAliases>
+
+    <!--添加类映射-->
+    <mappers>
+        <mapper class="com.wing.dao.BookMapper"/>
+    </mappers>
+</configuration>
