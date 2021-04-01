@@ -26,4 +26,8 @@ public class JsonUtils {
 
         return null;
     }
+
+    public static String jsonFormat(Object object) {
+        return jsonFormat(object, "yyyy-MM-dd HH:mm:ss");
+    }
 }

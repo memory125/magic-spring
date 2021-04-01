@@ -34,7 +34,6 @@ public class UserController {
     @RequestMapping("/j2")
     //@ResponseBody
     public String json2() throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
         List<User> userList = new ArrayList<User>();
         User user1 = new User(1, "程嘉禄", 35);
         User user2 = new User(2, "陈佳佳", 32);
@@ -46,8 +45,7 @@ public class UserController {
         userList.add(user3);
         userList.add(user4);
 
-        String str = mapper.writeValueAsString(userList);
-        return str;
+        return JsonUtils.jsonFormat(userList);
     }
 
     @RequestMapping("/j3")
