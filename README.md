@@ -22,6 +22,8 @@ Spring framework, Spring Boot and even Spring Cloud...
 - Review the Servlet application.
 - The basic concepts of SpringMVC.
 - Create SpringMVC sample project via IDEA.
+- The 1st sample on SpringMVC.
+- Spring annotation development.
 - The difference between `Class` and `Annotation`.
     - Create the specific sample.
     - Controller01 is implemented via Class implements `SpringMVC Controller`.
@@ -67,6 +69,17 @@ Spring framework, Spring Boot and even Spring Cloud...
     </beans>
     ``` 
     - We can copy the above `xml` file as SpringMVC configure file.
-
+    - Restful style controller.
+    - Solve the character encoding issue for display.
+    - `forward` and `redirect`.
+- Data format sample via `Json`.
+- The most important sample is integrate `Spring`,`SpringMVC` and `Mybatis` frameworks (springmvc-06-ssm-integration) to be the scaffold for Spring development.
+    - Web configuration (web.xml), which is for Servlet registry.
+    - Spring configuration (Spring-dao.xml, Spring-service.xml, IoC,AOP).
+    - SpringMVC configuration (Springmvc-controller.xml, tag `mvc).
+    - Mybatis configuration (mybatis-config.xml, BookMapper.xml)
+    - Database connection configuration (do.properties).    
+    
+    
 ## Spring Boot
 ## Spring Cloud
