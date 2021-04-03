@@ -73,7 +73,7 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Solve the character encoding issue for display.
     - `forward` and `redirect`.
 - Data format sample via `Json`.
-- The most important sample is integrate `Spring`,`SpringMVC` and `Mybatis` frameworks (springmvc-06-ssm-integration) to be the scaffold for Spring development.
+- The most important sample is integrate `Spring`,`SpringMVC` and `Mybatis` frameworks (**`springmvc-06-ssm-integration`**) to be the scaffold for Spring development.
     - Web configuration (web.xml), which is for Servlet registry.
     - Spring configuration (Spring-dao.xml, Spring-service.xml, IoC,AOP).
     - SpringMVC configuration (Springmvc-controller.xml, tag `mvc).
