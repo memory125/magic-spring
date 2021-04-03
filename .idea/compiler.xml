@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-07-ajax" />
         <module name="springmvc-02-hellomvc" />
         <module name="spring-ioc-03" />
         <module name="spring-annotation-06" />
@@ -48,6 +49,7 @@
       <module name="springmvc-04-controller" target="1.5" />
       <module name="springmvc-05-json" target="1.5" />
       <module name="springmvc-06-ssm-integration" target="1.5" />
+      <module name="springmvc-07-ajax" target="1.5" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>

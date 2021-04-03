@@ -28,4 +28,9 @@
         select * from ssm.books
     </select>
 
+    <!--根据书名查询Book-->
+    <select id="queryBookByName" resultType="Books">
+        select * from ssm.books where bookName = #{bookName}
+    </select>
+
 </mapper>
