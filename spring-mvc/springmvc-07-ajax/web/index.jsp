@@ -1,13 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>首页</title>
     <script src="${pageContext.request.contextPath}/statics/jquery-3.6.0.js"></script>
     <script>
       function a() {
         $.post({
           url: "${pageContext.request.contextPath}/a1",
-          data: {"name":$("#username").val()},     //  获取控件的内容时，$("控件名").val()
+          data: {"name":$("#username").val()},     //  获取控件的内容时，$("#控件名").val()
           success: function (data) {
             console.log(data);
           }
