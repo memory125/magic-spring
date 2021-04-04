@@ -12,7 +12,7 @@
 
     <!-- 自动扫描包，让指定包下的注解生效,由IOC容器统一管理 -->
     <context:component-scan base-package="com.wing.controller"/>
-    <!-- 让Spring MVC不处理静态资源 -->
+    <!-- 让Spring MVC不处理静态资源，即静态资源过滤 -->
     <mvc:default-servlet-handler />
 
     <!--开启SpringMVC注解-->
