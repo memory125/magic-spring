@@ -78,7 +78,50 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Spring configuration (Spring-dao.xml, Spring-service.xml, IoC,AOP).
     - SpringMVC configuration (Springmvc-controller.xml, tag `mvc).
     - Mybatis configuration (mybatis-config.xml, BookMapper.xml)
-    - Database connection configuration (do.properties).    
+    - Database connection configuration (do.properties).
+- Send requests from frontend to backend via `Ajax`.
+    - Send the request via `jQuery.post` or `jQuery.get`.
+    - Could refer to the following snippet.
+    ```js
+      function verifyName() {
+                  $.post({
+                      url: "${pageContext.request.contextPath}/a3",
+                      data:{"name": $("#name").val()},
+                      success: function (data, status) {
+                          if (data.toString() === "ok") {
+                              $("#userinfo").css("color", "green");
+                          } else {
+                              $("#userinfo").css("color", "red");
+                          }
+                          $("#userinfo").html(data);
+                      }
+                  });
+              }  
+    ```
+    
+- `Interceptor` is used to filter some special requests.
+    - Create `Interceptor` implements the interface `HandlerInterceptor`.
+    - Configure the `Interceptor` as the following `mvc` configuration.
+    ```xml
+      <!--配置拦截器-->
+          <mvc:interceptors>
+              <mvc:interceptor>
+                  <!--/** 包括路径及其子路径-->
+                  <!--/admin/* 拦截的是/admin/add等等这种 , /admin/add/user不会被拦截-->
+                  <!--/admin/** 拦截的是/admin/下的所有-->
+                  <mvc:mapping path="/**"/>
+                  <!--bean配置的就是拦截器-->
+                  <bean class="com.wing.config.MyInterceptor"/>
+              </mvc:interceptor>
+              <mvc:interceptor>
+                <!--登录拦截器-->
+                  <mvc:mapping path="/user/**"/>
+                  <!--bean配置的就是拦截器-->
+                  <bean class="com.wing.config.LoginInterceptor"/>
+              </mvc:interceptor>
+          </mvc:interceptors>
+    ```
+- File uploading and download.
     
     
 ## Spring Boot
