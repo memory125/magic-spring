@@ -15,6 +15,7 @@ public class LoginController {
 
     @RequestMapping("/main")
     public String main(HttpSession session, Model model) {
+        // 如果已经有用户登录
         if (session != null) {
             Map<String, String> userInfo = (Map<String, String>) session.getAttribute("userInfo");
             if (userInfo != null) {
@@ -31,6 +32,7 @@ public class LoginController {
 
     @RequestMapping("/tologin")
     public String goToLogin(HttpSession session, Model model) {
+        // 如果已经有用户登录
         if (session != null) {
             Map<String, String> userInfo = (Map<String, String>) session.getAttribute("userInfo");
             if (userInfo !=  null) {

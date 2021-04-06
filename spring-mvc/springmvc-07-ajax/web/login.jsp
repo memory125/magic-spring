@@ -6,7 +6,7 @@
     <!-- 引入 Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <%--引入jQuery--%>
-    <script src="${pageContext.request.contextPath}/statics/jquery-3.6.0.js"></script>
+    <script src="${pageContext.request.contextPath}/statics/jquery.js"></script>
     <script>
         function verifyName() {
             $.post({

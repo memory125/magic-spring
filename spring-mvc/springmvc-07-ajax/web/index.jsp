@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>首页</title>
-    <script src="${pageContext.request.contextPath}/statics/jquery-3.6.0.js"></script>
+    <script src="${pageContext.request.contextPath}/statics/jquery.js"></script>
     <script>
       function a() {
         $.post({
