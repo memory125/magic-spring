@@ -81,6 +81,11 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Database connection configuration (`do.properties`).
 - Send requests from frontend to backend via `Ajax`.
     - Send the request via `jQuery.post` or `jQuery.get`.
+    - Add the `jQuery` dependency to project.
+        ```js
+        <%--引入jQuery--%>
+        <script src="${pageContext.request.contextPath}/statics/jquery.js"></script>
+      ```
     - Could refer to the following snippet.
     ```js
       function verifyName() {
