@@ -8,5 +8,7 @@
       <input type="file" name="file"/>
       <input type="submit" value="upload">
     </form>
+
+    <a href="/download">点击下载</a>
   </body>
 </html>
