@@ -20,6 +20,7 @@
         <module name="spring-autowire-05" />
         <module name="spring-aop-09" />
         <module name="springmvc-05-json" />
+        <module name="springmvc-08-interceptor" />
         <module name="springmvc-03-annotation" />
         <module name="spring-mybatis-10" />
         <module name="spring-transaction-11" />
@@ -50,6 +51,7 @@
       <module name="springmvc-05-json" target="1.5" />
       <module name="springmvc-06-ssm-integration" target="1.5" />
       <module name="springmvc-07-ajax" target="1.5" />
+      <module name="springmvc-08-interceptor" target="1.5" />
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>

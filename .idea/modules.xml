@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-05-json/springmvc-05-json.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-05-json/springmvc-05-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-06-ssm-integration/springmvc-06-ssm-integration.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-06-ssm-integration/springmvc-06-ssm-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-07-ajax/springmvc-07-ajax.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-07-ajax/springmvc-07-ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-08-interceptor/springmvc-08-interceptor.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-08-interceptor/springmvc-08-interceptor.iml" />
     </modules>
   </component>
 </project>
