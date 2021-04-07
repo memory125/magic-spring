@@ -208,7 +208,23 @@ Spring framework, Spring Boot and even Spring Cloud...
       </properties>
     ```
   - When we import above dependencies to Spring Boot application, the version for these dependencies are specified via Spring Boot.
+  - `starter` is super important for Spring Boot application. Please refer to [Spring Boot Starter](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot).
+  - Annotation.
+      ```xml
+        - @SpringBootApplication 
+          - @SpringBootConfiguration  - SpringBoot的配置
+            - @Configuration          - Spring配置类
+              - @Component            - 说明这也是一个Spring的组件
+                 
+          - @EnableAutoConfiguration  - 自动配置
+            - @AutoConfigurationPackage - 自动配置包
+              - @Import({Registrar.class}) - 导入包注册
+            - @Import({AutoConfigurationImportSelector.class}) - 导入自动配置选择器
+          
+          - @ComponentScan            - 组件扫描
+            - @Repeatable(ComponentScans.class) - 包扫描
+      ```
+    - `META-INF/spring.factories` is the core configuration file for Spring Boot, which stored in `spring-boot-autoconfigure-2.4.4.jar`. 
     
-     
     
 ## Spring Cloud
