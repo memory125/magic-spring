@@ -151,5 +151,64 @@ Spring framework, Spring Boot and even Spring Cloud...
 - Create Spring Boot project.
     - By `https://start.spring.io/`.
     - By IDEA2020.
+- Spring Boot principle.
+    - `pom.xml` includes all information and dependencies for Spring Boot application.
+    -  `spring-boot-dependencies` is the core dependencies file contains all related dependencies for Spring Boot. Here is just sinppet.
+    ```xml
+    <properties>
+        <activemq.version>5.16.1</activemq.version>
+        <antlr2.version>2.7.7</antlr2.version>
+        <appengine-sdk.version>1.9.87</appengine-sdk.version>
+        <artemis.version>2.15.0</artemis.version>
+        <aspectj.version>1.9.6</aspectj.version>
+        <assertj.version>3.18.1</assertj.version>
+        <atomikos.version>4.0.6</atomikos.version>
+        <awaitility.version>4.0.3</awaitility.version>
+        <bitronix.version>2.1.4</bitronix.version>
+        <build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+        <byte-buddy.version>1.10.22</byte-buddy.version>
+        <caffeine.version>2.8.8</caffeine.version>
+        <cassandra-driver.version>4.9.0</cassandra-driver.version>
+        <classmate.version>1.5.1</classmate.version>
+        <commons-codec.version>1.15</commons-codec.version>
+        <commons-dbcp2.version>2.8.0</commons-dbcp2.version>
+        <commons-lang3.version>3.11</commons-lang3.version>
+        <commons-pool.version>1.6</commons-pool.version>
+        <commons-pool2.version>2.9.0</commons-pool2.version>
+        <couchbase-client.version>3.0.10</couchbase-client.version>
+        <db2-jdbc.version>11.5.5.0</db2-jdbc.version>
+        <dependency-management-plugin.version>1.0.11.RELEASE</dependency-management-plugin.version>
+        <derby.version>10.14.2.0</derby.version>
+        <dropwizard-metrics.version>4.1.18</dropwizard-metrics.version>
+        <ehcache.version>2.10.6</ehcache.version>
+        <ehcache3.version>3.9.2</ehcache3.version>
+        <elasticsearch.version>7.9.3</elasticsearch.version>
+        <embedded-mongo.version>2.2.0</embedded-mongo.version>
+        <flyway.version>7.1.1</flyway.version>
+        <freemarker.version>2.3.31</freemarker.version>
+        <git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>
+        <glassfish-el.version>3.0.3</glassfish-el.version>
+        <glassfish-jaxb.version>2.3.3</glassfish-jaxb.version>
+        <groovy.version>2.5.14</groovy.version>
+        <gson.version>2.8.6</gson.version>
+        <h2.version>1.4.200</h2.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <hazelcast.version>4.0.3</hazelcast.version>
+        <hazelcast-hibernate5.version>2.1.1</hazelcast-hibernate5.version>
+        <hibernate.version>5.4.29.Final</hibernate.version>
+        <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
+        <hikaricp.version>3.4.5</hikaricp.version>
+        <hsqldb.version>2.5.1</hsqldb.version>
+        <htmlunit.version>2.44.0</htmlunit.version>
+        <httpasyncclient.version>4.1.4</httpasyncclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <httpcore.version>4.4.14</httpcore.version>
+        <infinispan.version>11.0.10.Final</infinispan.version>
+        ...
+      </properties>
+    ```
+  - When we import above dependencies to Spring Boot application, the version for these dependencies are specified via Spring Boot.
+    
+     
     
 ## Spring Cloud
