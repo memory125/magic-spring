@@ -12,6 +12,11 @@
         <fileset id="fileset3" name="Spring Autowired 02" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-02.xml</file>
         </fileset>
+        <fileset id="fileset4" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-01.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-autowired-02.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
