@@ -1,5 +1,6 @@
 # magic-spring
 Spring framework, Spring Boot and even Spring Cloud...
+
 ## Spring Framework
 - The basic concepts of spring framework.
     - IOC: Inversion of Control(控制反转)
@@ -128,6 +129,27 @@ Spring framework, Spring Boot and even Spring Cloud...
     ```
 - File uploading and download.
     
-    
 ## Spring Boot
+- The basic concepts of Spring Boot.
+    - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+    - Create stand-alone Spring applications.      
+    - Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files).
+    - Provide opinionated `starter` dependencies to simplify your build configuration.      
+    - Automatically configure Spring and 3rd party libraries whenever possible.      
+    - Provide production-ready features such as metrics, health checks, and externalized configuration.
+    - Absolutely no code generation and no requirement for XML configuration.
+    - The Spring Boot application has a parent dependency as the following.
+    ```xml
+         <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.4.4</version>
+            <relativePath/> <!-- lookup parent from repository -->
+         </parent>
+    ```
+    - All dependencies for `Spring Boot` are began as `spring-boot-starter`.
+- Create Spring Boot project.
+    - By `https://start.spring.io/`.
+    - By IDEA2020.
+    
 ## Spring Cloud
