@@ -1,0 +1,19 @@
+staff:
+  name: Jack
+  age: 35
+  hobbies:
+    - coding
+    - music
+    - reading
+    - electronics
+    - swimming
+    - badminton
+    - hiking
+    - riding
+  credentials: {"ID Card": 25544545,
+                "Book Card": 8956622,
+                "Student Card": 622323,
+                "Staff ID": 9852626,
+                "Dirver Lisence": "BX1545125"
+  }
+  isMarried: false
