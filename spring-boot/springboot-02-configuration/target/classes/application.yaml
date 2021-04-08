@@ -1,0 +1,33 @@
+# Spring Boot核心文件 - 配置，官方推荐yaml格式
+
+# 服务器端口
+#server:
+#  port: 8081
+
+# 数据库配置
+#spring:
+#  datasource:
+#    driver: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.206.136:3306/ssm?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: 123456
+
+#staff:
+#  name: Jack
+#  age: 35
+#  hobbies:
+#    - coding
+#    - music
+#    - reading
+#    - electronics
+#    - swimming
+#    - badminton
+#    - hiking
+#    - riding
+#  credentials: {"ID Card": 25544545,
+#                "Book Card": 8956622,
+#                "Student Card": 622323,
+#                "Staff ID": 9852626,
+#                "Dirver Lisence": "BX1545125"
+#                }
+#  isMarried: false

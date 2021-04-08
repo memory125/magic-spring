@@ -20,6 +20,7 @@
         <module name="spring-di-04" />
         <module name="spring-autowire-05" />
         <module name="spring-aop-09" />
+        <module name="springboot-02-configuration" />
         <module name="springmvc-05-json" />
         <module name="springmvc-08-interceptor" />
         <module name="springmvc-09-upload" />
@@ -47,6 +48,7 @@
       <module name="spring-proxy-08" target="1.5" />
       <module name="spring-transaction-11" target="1.5" />
       <module name="springboot-01-helloworld" target="1.8" />
+      <module name="springboot-02-configuration" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
@@ -61,6 +63,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-01-helloworld" options="-parameters" />
+      <module name="springboot-02-configuration" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "staff",
+      "type": "com.wing.pojo.Staff",
+      "sourceType": "com.wing.pojo.Staff"
+    }
+  ],
+  "properties": [
+    {
+      "name": "staff.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.wing.pojo.Staff",
+      "defaultValue": 0
+    },
+    {
+      "name": "staff.credentials",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.wing.pojo.Staff"
+    },
+    {
+      "name": "staff.hobbies",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.wing.pojo.Staff"
+    },
+    {
+      "name": "staff.is-married",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wing.pojo.Staff",
+      "defaultValue": false
+    },
+    {
+      "name": "staff.name",
+      "type": "java.lang.String",
+      "sourceType": "com.wing.pojo.Staff"
+    }
+  ],
+  "hints": []
+}
