@@ -225,6 +225,23 @@ Spring framework, Spring Boot and even Spring Cloud...
             - @Repeatable(ComponentScans.class) - 包扫描
       ```
     - `META-INF/spring.factories` is the core configuration file for Spring Boot, which stored in `spring-boot-autoconfigure-2.4.4.jar`. 
-    
+- Spring Boot Configuration.
+    - `Properties`, which is key feature for Spring Boot application.
+    - The configurable properties can refer to [`Spring Properties`](https://docs.spring.io/spring-boot/docs/2.4.4/reference/html/appendix-application-properties.html#common-application-properties).
+    - The configuration file is end with `.yaml` or `.yml`, which is recommended via Spring official site.
+    - The sample configuration can refer to the following snippet.
+    ```yaml
+      # 服务器端口
+      server:
+        port: 8081
+      
+       # 数据库配置
+      spring:
+        datasource:
+          driver: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+          username: root
+          password: 123456
+    ```
     
 ## Spring Cloud
