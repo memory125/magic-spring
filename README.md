@@ -246,8 +246,8 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Configuration file path.
         - `file: /` : current project root dir. 
         - `file:./config/`: sub dir under current project root .
-        - `classpath:/` : current resource path.
-        - `classpath:/config/` : sub dir under current resource path.
+        - `classpath:/` : current resources path.
+        - `classpath:/config/` : sub dir under current resources path.
 
     
 ## Spring Cloud
