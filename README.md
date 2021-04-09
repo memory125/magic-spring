@@ -238,7 +238,7 @@ Spring framework, Spring Boot and even Spring Cloud...
        # 数据库配置
       spring:
         datasource:
-          driver: com.mysql.cj.jdbc.Driver
+          driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://127.0.0.1:3306/db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
           username: root
           password: 123456
