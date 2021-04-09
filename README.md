@@ -243,5 +243,11 @@ Spring framework, Spring Boot and even Spring Cloud...
           username: root
           password: 123456
     ```
+    - Configuration file path.
+        - `file: /` : current project root dir. 
+        - `file:./config/`: sub dir under current project root .
+        - `classpath:/` : current resource path.
+        - `classpath:/config/` : sub dir under current resource path.
+
     
 ## Spring Cloud
