@@ -15,6 +15,7 @@
         <module name="spring-proxy-08" />
         <module name="springmvc-06-ssm-integration" />
         <module name="spring-ioc-01" />
+        <module name="springboot-03-web" />
         <module name="springmvc-04-controller" />
         <module name="springboot-01-helloworld" />
         <module name="spring-di-04" />
@@ -49,6 +50,7 @@
       <module name="spring-transaction-11" target="1.5" />
       <module name="springboot-01-helloworld" target="1.8" />
       <module name="springboot-02-configuration" target="1.8" />
+      <module name="springboot-03-web" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
@@ -64,6 +66,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-01-helloworld" options="-parameters" />
       <module name="springboot-02-configuration" options="-parameters" />
+      <module name="springboot-03-web" options="-parameters" />
     </option>
   </component>
 </project>

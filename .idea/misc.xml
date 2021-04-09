@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-01-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-02-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/springboot-03-web/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -17,6 +18,10 @@
         <option value="$PROJECT_DIR$/spring-mvc/spring-03-annotation/pom.xml" />
       </set>
     </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/spring-boot/springboot-03-web/.gitignore" />
+    <file url="file://$PROJECT_DIR$/spring-boot/springboot-03-web/HELP.md" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
