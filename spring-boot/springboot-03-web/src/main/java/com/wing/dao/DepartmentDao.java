@@ -7,6 +7,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author memory125
+ */
 //注册到IOC容器中
 @Repository
 public class DepartmentDao {

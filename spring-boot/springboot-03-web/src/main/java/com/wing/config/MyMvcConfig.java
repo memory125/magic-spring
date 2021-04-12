@@ -3,6 +3,7 @@ package com.wing.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -25,4 +26,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
         return new MyLocaleResolver();
     }
 
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 添加拦截器，并配置要拦截的页面，同时排除主页，登陆请求及静态资源
+        registry.addInterceptor(new LoginInterceptor())
+                .addPathPatterns("/**")
+                .excludePathPatterns("/index.html", "/", "/user/login", "/css/**", "/img/**", "/js/**");
+    }
 }

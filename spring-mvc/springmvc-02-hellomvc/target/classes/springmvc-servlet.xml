@@ -3,13 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
     <!--注册bean-->
-    <!--BeanNameUrlHandlerMapping-->
+    <!--处理器映射器: BeanNameUrlHandlerMapping-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-    <!--SimpleControllerHandlerAdapter-->
+    <!--处理器适配器: SimpleControllerHandlerAdapter-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
-    <!--视图解析器:DispatcherServlet给他的ModelAndView-->
+    <!--视图解析器:DispatcherServlet给他的ModelAndView，模板引擎: Thymeleaf, Freemarker-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
         <!--前缀-->
         <property name="prefix" value="/WEB-INF/jsp/"/>
