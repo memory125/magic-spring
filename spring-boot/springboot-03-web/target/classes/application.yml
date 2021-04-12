@@ -1,3 +1,10 @@
 server:
-  port: 9000
+  port: 8080
 
+# 关闭模板引擎的缓存
+spring:
+  thymeleaf:
+    cache: false
+
+  messages:
+    basename: i18n.login
