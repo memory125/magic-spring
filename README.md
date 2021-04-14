@@ -248,6 +248,15 @@ Spring framework, Spring Boot and even Spring Cloud...
         - `file:./config/`: sub dir under current project root .
         - `classpath:/` : current resources path.
         - `classpath:/config/` : sub dir under current resources path.
+ - Spring Boot Application - Web, **`springboot-03-web`** is super important for learning. 
+    - Create Spring Boot Web application via IDEA.
+    - Integrate the Thymeleaf framework to web project.
+        - The syntax of Thymeleaf framework.
+        - Import Thymeleaf resources to web.
+        - Edit Thymeleaf `html` file.
+    - Internationalize for Spring Boot project.
+        
+      
 
     
 ## Spring Cloud
