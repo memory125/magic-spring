@@ -1,10 +1,14 @@
 package com.wing.controller;
 
+import com.wing.dao.DepartmentDao;
 import com.wing.dao.EmployeeDao;
+import com.wing.pojo.Department;
 import com.wing.pojo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Collection;
@@ -17,10 +21,29 @@ public class EmployeeController {
     @Autowired
     private EmployeeDao employeeDao;
 
+    @Autowired
+    private DepartmentDao departmentDao;
+
     @RequestMapping("/emps")
     public String list(Model model) {
         Collection<Employee> employees = employeeDao.getAll();
         model.addAttribute("emps",employees);
         return "emps/list";       //返回到list页面
     }
+
+    @GetMapping("/add")
+    public String toAddEmployee(Model model) {
+        //查出所有的部门信息,添加到departments中,用于前端接收
+        Collection<Department> departments = departmentDao.getDepartments();
+        model.addAttribute("departments", departments);
+        return "emps/add";//返回到添加员工页面
+    }
+
+    @PostMapping("/emp")
+    public String addEmployee(Employee employee) {
+        //添加一个员工
+        employeeDao.addsave(employee);//调用底层业务方法保存员工信息
+        return "redirect:/emps";//重定向到/emps,刷新列表,返回到list页面
+    }
+
 }

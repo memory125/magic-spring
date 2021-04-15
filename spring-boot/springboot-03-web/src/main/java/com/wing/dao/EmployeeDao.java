@@ -25,11 +25,11 @@ public class EmployeeDao {
 
     static {
         employees = new HashMap<>();//创建一个员工表
-        employees.put(1001, new Employee(1001, "zsr", "1234@qq.com", 0, new Department(1001, "技术部")));
-        employees.put(1002, new Employee(1002, "lyr", "1345@qq.com", 1, new Department(1002, "市场部")));
-        employees.put(1003, new Employee(1003, "gcc", "5665@qq.com", 0, new Department(1003, "调研部")));
-        employees.put(1004, new Employee(1004, "zyx", "7688@qq.com", 1, new Department(1004, "后勤部")));
-        employees.put(1005, new Employee(1005, "zch", "8089@qq.com", 1, new Department(1005, "运营部")));
+        employees.put(1001, new Employee(1001, "srz", "1234@qq.com", 0, new Department(1001, "技术部")));
+        employees.put(1002, new Employee(1002, "trt", "1345@qq.com", 1, new Department(1002, "市场部")));
+        employees.put(1003, new Employee(1003, "gtg", "5665@qq.com", 0, new Department(1003, "调研部")));
+        employees.put(1004, new Employee(1004, "gdr", "7688@qq.com", 1, new Department(1004, "后勤部")));
+        employees.put(1005, new Employee(1005, "byt", "8089@qq.com", 1, new Department(1005, "运营部")));
     }
 
     //主键自增
