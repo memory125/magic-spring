@@ -64,4 +64,12 @@ public class EmployeeController {
         return "redirect:/emps";//重定向到/emps,刷新列表,返回到list页面
     }
 
+    @RequestMapping("/delemp/{id}")
+    public String deleteEmployee(@PathVariable("id") int id, Model model) {
+        // 删除员工
+        employeeDao.deleteEmployeeByID(id);
+        model.addAttribute("msg", "删除用户" + id + "成功");
+        return "redirect:/emps";//重定向到/emps,刷新列表,返回到list页面
+    }
+
 }
