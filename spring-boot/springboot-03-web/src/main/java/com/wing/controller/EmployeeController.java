@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -41,6 +42,23 @@ public class EmployeeController {
 
     @PostMapping("/emp")
     public String addEmployee(Employee employee) {
+        //添加一个员工
+        employeeDao.addsave(employee);//调用底层业务方法保存员工信息
+        return "redirect:/emps";//重定向到/emps,刷新列表,返回到list页面
+    }
+
+    @RequestMapping("/emp/{id}")
+    public String toUpdateEmployee(@PathVariable("id") int id, Model model) {
+        //查询员工信息
+        Employee employee = employeeDao.getEmployeeByID(id);
+        model.addAttribute("emp", employee);
+        Collection<Department> departments = departmentDao.getDepartments();
+        model.addAttribute("departments", departments);
+        return "emps/update";
+    }
+
+    @PostMapping("/updateEmp")
+    public String updateEmployee(Employee employee) {
         //添加一个员工
         employeeDao.addsave(employee);//调用底层业务方法保存员工信息
         return "redirect:/emps";//重定向到/emps,刷新列表,返回到list页面
