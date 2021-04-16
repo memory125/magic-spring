@@ -11,4 +11,4 @@ spring:
 # 时间日期格式化!
   mvc:
     format:
-      date-time: yyyy-MM-dd HH:mm:ss
+      date: yyyy-MM-dd
