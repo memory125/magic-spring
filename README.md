@@ -252,9 +252,18 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Create Spring Boot Web application via IDEA.
     - Integrate the Thymeleaf framework to web project.
         - The syntax of Thymeleaf framework.
-        - Import Thymeleaf resources to web.
+        - Import Thymeleaf namespace to html file. 
+        ```html
+              <!DOCTYPE html>
+              <html lang="en" xmlns:th="http://www.thymeleaf.org">
+        ```
         - Edit Thymeleaf `html` file.
     - Internationalize for Spring Boot project.
+        - Create `i18n` directory.
+        - Add `xxx.properties` file under `i18n` dir.
+        - Add `xxx_en_US.properties` and `xxx_zh_CN.properties` under `i18n` dir.
+        - Bundle these file to `Resouce Bundle 'xx''`.
+        - Edit above files according to the specific languages.
         
       
 
