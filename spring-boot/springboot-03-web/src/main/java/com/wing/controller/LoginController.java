@@ -30,4 +30,14 @@ public class LoginController {
             return "index";//跳转回首页
         }
     }
+
+    @RequestMapping("/user/logout")
+    //@RequestParam请求参数
+    public String logout(HttpSession session){
+        session.invalidate();
+        // 或者
+        //session.removeAttribute("loginUser");
+        return "index";//跳转回首页
+    }
+
 }
