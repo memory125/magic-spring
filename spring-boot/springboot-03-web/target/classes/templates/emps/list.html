@@ -54,7 +54,7 @@
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<h2>员工列表</h2>
 					<h2><a class="btn btn-sm btn-success" th:href="@{/add}">添加员工</a></h2>
-					<span th:text="${msg}" class="alert-info"></span>
+					<p style="color: red" th:text="${info}" th:if="${not #strings.isEmpty(info)}"></p>
 					<div class="table-responsive">
 						<table class="table table-striped table-sm">
 							<thead>

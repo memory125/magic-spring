@@ -30,6 +30,7 @@
         <module name="spring-transaction-11" />
         <module name="spring-appconfig-07" />
         <module name="springmvc-01-servlet" />
+        <module name="springboot-04-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,6 +52,7 @@
       <module name="springboot-01-helloworld" target="1.8" />
       <module name="springboot-02-configuration" target="1.8" />
       <module name="springboot-03-web" target="1.8" />
+      <module name="springboot-04-data" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
@@ -67,6 +69,7 @@
       <module name="springboot-01-helloworld" options="-parameters" />
       <module name="springboot-02-configuration" options="-parameters" />
       <module name="springboot-03-web" options="-parameters" />
+      <module name="springboot-04-data" options="-parameters" />
     </option>
   </component>
 </project>
