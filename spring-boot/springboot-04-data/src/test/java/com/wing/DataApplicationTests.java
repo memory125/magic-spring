@@ -18,6 +18,8 @@ class DataApplicationTests {
 	void contextLoads() throws SQLException {
 		/*
 		class com.zaxxer.hikari.HikariDataSource
+		type --> druid
+		class com.alibaba.druid.pool.DruidDataSource
 		 */
 		System.out.println(dataSource.getClass());
 

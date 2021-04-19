@@ -4,3 +4,4 @@ spring:
     url: jdbc:mysql://192.168.206.136:3306/ssm?serverTimezone=UTC&useSSL=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
