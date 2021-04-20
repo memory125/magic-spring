@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "com.wing.config.DruidConfig",
+      "sourceType": "com.wing.config.DruidConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
