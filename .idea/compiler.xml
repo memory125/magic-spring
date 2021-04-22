@@ -23,6 +23,7 @@
         <module name="spring-ioc-02" />
         <module name="spring-proxy-08" />
         <module name="springmvc-06-ssm-integration" />
+        <module name="springboot-06-security" />
         <module name="spring-ioc-01" />
         <module name="springboot-03-web" />
         <module name="springboot-01-helloworld" />
@@ -55,6 +56,7 @@
       <module name="springboot-03-web" target="1.8" />
       <module name="springboot-04-data" target="1.8" />
       <module name="springboot-05-mybatis" target="1.8" />
+      <module name="springboot-06-security" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
@@ -73,6 +75,7 @@
       <module name="springboot-03-web" options="-parameters" />
       <module name="springboot-04-data" options="-parameters" />
       <module name="springboot-05-mybatis" options="-parameters" />
+      <module name="springboot-06-security" options="-parameters" />
     </option>
   </component>
 </project>
