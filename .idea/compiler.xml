@@ -12,6 +12,7 @@
         <module name="spring-di-04" />
         <module name="springboot-02-configuration" />
         <module name="springmvc-08-interceptor" />
+        <module name="hello-shiro" />
         <module name="springmvc-03-annotation" />
         <module name="spring-mybatis-10" />
         <module name="spring-transaction-11" />
@@ -36,6 +37,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hello-shiro" target="1.5" />
       <module name="spring-03-annotation" target="1.5" />
       <module name="spring-annotation-06" target="1.5" />
       <module name="spring-aop-09" target="1.5" />
@@ -57,6 +59,7 @@
       <module name="springboot-04-data" target="1.8" />
       <module name="springboot-05-mybatis" target="1.8" />
       <module name="springboot-06-security" target="1.8" />
+      <module name="springboot-07-shiro" target="1.5" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
       <module name="springmvc-03-annotation" target="1.5" />
