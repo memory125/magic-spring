@@ -22,11 +22,28 @@ public class HelloShiro {
 //        SecurityManager securityManager = factory.getInstance();
 //        SecurityUtils.setSecurityManager(securityManager);
 
+        log.trace("=========trace====================");
+        log.warn("===============warn=============================");
+        log.info("============info=====================");
+        log.error("============error=====================");
+        log.debug("============debug=====================");
+
+        log.trace("=========trace ->1====================");
+        log.trace("=========trace ->2====================");
+        log.trace("=========trace ->3====================");
+        log.trace("=========trace ->4====================");
+        log.trace("=========trace ->5====================");
         // 获取本地资源文件,设置realm为本地的资源文件
         DefaultSecurityManager defaultSecurityManager = new DefaultSecurityManager();
         IniRealm iniRealm = new IniRealm("classpath:shiro.ini");
         defaultSecurityManager.setRealm(iniRealm);
         SecurityUtils.setSecurityManager(defaultSecurityManager);
+
+        log.warn("===============warn ->1 =============================");
+        log.warn("===============warn ->2=============================");
+        log.warn("===============warn ->3=============================");
+        log.warn("===============warn ->4=============================");
+        log.warn("===============warn ->5=============================");
 
         // get the currently executing user: 获取单前用户对象
         Subject currentUser = SecurityUtils.getSubject();
@@ -37,6 +54,12 @@ public class HelloShiro {
         if (value.equals("aValue")) {
             log.info("Retrieved the correct value!  ===> [" + value + "]");
         }
+
+        log.info("============info ->1 =====================");
+        log.info("============info ->2 =====================");
+        log.info("============info ->3 =====================");
+        log.info("============info ->4 =====================");
+        log.info("============info ->5 =====================");
 
         // let's login the current user so we can check against roles and permissions: 测试当前用户是否被认证
         if (!currentUser.isAuthenticated()) {
@@ -59,6 +82,12 @@ public class HelloShiro {
             }
         }
 
+        log.error("===============error ->1 =============================");
+        log.error("===============error ->2=============================");
+        log.error("===============error ->3=============================");
+        log.error("===============error ->4=============================");
+        log.error("===============error ->5=============================");
+
         //say who they are:
         //print their identifying principal (in this case, a username):
         log.info("User [" + currentUser.getPrincipal() + "] logged in successfully.");
@@ -69,6 +98,12 @@ public class HelloShiro {
         } else {
             log.info("Hello, mere mortal.");
         }
+
+        log.debug("===============debug ->1 =============================");
+        log.debug("===============debug ->2=============================");
+        log.debug("===============debug ->3=============================");
+        log.debug("===============debug ->4=============================");
+        log.debug("===============debug ->5=============================");
 
         //test a typed permission (not instance-level) /*测试有什么权限 粗粒度*/
         if (currentUser.isPermitted("lightsaber:wield")) {
