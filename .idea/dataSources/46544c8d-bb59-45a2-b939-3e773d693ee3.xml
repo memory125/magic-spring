@@ -893,7 +893,11 @@ SELECT|sys.sys_config:null
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <key id="265" parent="238" name="PRIMARY">
+    <column id="265" parent="238" name="perms">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="266" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
