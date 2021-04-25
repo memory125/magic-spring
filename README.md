@@ -291,11 +291,11 @@ Spring framework, Spring Boot and even Spring Cloud...
       - Import and configure different datasource, implement sample via `Druid`.
       ```xml
         <!--druid依赖包-->
-        		<dependency>
-        			<groupId>com.alibaba</groupId>
-        			<artifactId>druid</artifactId>
-        			<version>1.2.6</version>
-        		</dependency>
+        <dependency>
+        	<groupId>com.alibaba</groupId>
+        	<artifactId>druid</artifactId>
+        	<version>1.2.6</version>
+        </dependency>
         ``` 
       and the datasource type should be
       ```xml
