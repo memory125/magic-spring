@@ -264,8 +264,48 @@ Spring framework, Spring Boot and even Spring Cloud...
         - Add `xxx_en_US.properties` and `xxx_zh_CN.properties` under `i18n` dir.
         - Bundle these file to `Resouce Bundle 'xx''`.
         - Edit above files according to the specific languages.
-        
+    - Integrates data connection.
+        - Create Spring Boot application with JDBC, MySQL driver project.
+        ```xml
+          	<dependency>
+          		<groupId>org.springframework.boot</groupId>
+          		<artifactId>spring-boot-starter-jdbc</artifactId>
+          	</dependency>
+            <dependency>
+      			<groupId>mysql</groupId>
+      			<artifactId>mysql-connector-java</artifactId>      			
+      		</dependency>
       
+        ```
+      - Configure the datasource via `yml`.
+        ```xml
+           spring:
+             datasource:
+               #用于SQL状态监控,stat代表状态,wall代表防火墙
+               type: com.alibaba.druid.pool.DruidDataSource
+               url: jdbc:mysql://127.0.0.1:3306/ssm?serverTimezone=UTC&useSSL=true&useUnicode=true&characterEncoding=UTF-8
+               username: root
+               password: 123456
+               driver-class-name: com.mysql.cj.jdbc.Driver
+        ```
+      - Import and configure different datasource, implement sample via `Druid`.
+      ```xml
+        <!--druid依赖包-->
+        		<dependency>
+        			<groupId>com.alibaba</groupId>
+        			<artifactId>druid</artifactId>
+        			<version>1.2.6</version>
+        		</dependency>
+        ``` 
+      and the datasource type should be
+      ```xml
+      spring:
+         datasource:
+              type: com.alibaba.druid.pool.DruidDataSource
+      ```
+      - Implementing the monitoring web via configure `Druid` special configuration.
+      
+    
 
     
 ## Spring Cloud
