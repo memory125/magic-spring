@@ -1,7 +1,6 @@
 package com.wing.config;
 
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.Contact;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -10,6 +9,7 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.builders.RequestParameterBuilder;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.service.ParameterType;
 import springfox.documentation.service.RequestParameter;
 import springfox.documentation.spi.DocumentationType;
@@ -45,11 +45,12 @@ public class SwaggerConfig {
 
 
     private ApiInfo apiInfo() {
+        Contact contact = new Contact("memory125", "https://github.com/memory125", "308463374@qq.com");
         return new ApiInfoBuilder()
                 .title("接口开发文档3.0")
                 .description("By Wing")
                 .version("1.0")
-                .contact(new Contact("memory125", "https://github.com/memory125", "308463374@qq.com"))
+                .contact(contact)
                 .build();
     }
 
