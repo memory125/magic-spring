@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: shiro
+
   datasource:
     #用于SQL状态监控,stat代表状态,wall代表防火墙
     type: com.alibaba.druid.pool.DruidDataSource

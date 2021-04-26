@@ -29,6 +29,8 @@
 #    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 #用于SQL状态监控,stat代表状态,wall代表防火墙
 spring:
+  application:
+    name: data
   datasource:
     #用于SQL状态监控,stat代表状态,wall代表防火墙
     type: com.alibaba.druid.pool.DruidDataSource

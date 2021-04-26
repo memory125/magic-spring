@@ -3,6 +3,8 @@ server:
 
 # 关闭模板引擎的缓存
 spring:
+  application:
+    name: web
   thymeleaf:
     cache: false
 

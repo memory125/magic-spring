@@ -34,6 +34,7 @@
         <module name="springmvc-05-json" />
         <module name="springboot-05-mybatis" />
         <module name="springmvc-09-upload" />
+        <module name="springboot-08-swagger" />
         <module name="springboot-04-data" />
       </profile>
     </annotationProcessing>
@@ -61,6 +62,7 @@
       <module name="springboot-05-mybatis" target="1.8" />
       <module name="springboot-06-security" target="1.8" />
       <module name="springboot-07-shiro" target="1.5" />
+      <module name="springboot-08-swagger" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
@@ -81,6 +83,7 @@
       <module name="springboot-04-data" options="-parameters" />
       <module name="springboot-05-mybatis" options="-parameters" />
       <module name="springboot-06-security" options="-parameters" />
+      <module name="springboot-08-swagger" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
     </option>
   </component>
