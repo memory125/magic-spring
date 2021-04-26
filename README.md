@@ -267,15 +267,14 @@ Spring framework, Spring Boot and even Spring Cloud...
     - Integrates data connection.
         - Create Spring Boot application with JDBC, MySQL driver project.
         ```xml
-          	<dependency>
-          		<groupId>org.springframework.boot</groupId>
-          		<artifactId>spring-boot-starter-jdbc</artifactId>
-          	</dependency>
             <dependency>
-      			<groupId>mysql</groupId>
-      			<artifactId>mysql-connector-java</artifactId>      			
-      		</dependency>
-      
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>      			
+            </dependency>      
         ```
       - Configure the datasource via `yml`.
         ```xml
