@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot/springboot-06-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/springboot-08-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/springboot-09-async/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

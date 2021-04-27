@@ -14,6 +14,7 @@
         <module name="springboot-shiro" />
         <module name="springmvc-08-interceptor" />
         <module name="hello-shiro" />
+        <module name="springboot-09-async" />
         <module name="springmvc-03-annotation" />
         <module name="spring-mybatis-10" />
         <module name="spring-transaction-11" />
@@ -63,6 +64,7 @@
       <module name="springboot-06-security" target="1.8" />
       <module name="springboot-07-shiro" target="1.5" />
       <module name="springboot-08-swagger" target="1.8" />
+      <module name="springboot-09-async" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
@@ -84,6 +86,7 @@
       <module name="springboot-05-mybatis" options="-parameters" />
       <module name="springboot-06-security" options="-parameters" />
       <module name="springboot-08-swagger" options="-parameters" />
+      <module name="springboot-09-async" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
     </option>
   </component>

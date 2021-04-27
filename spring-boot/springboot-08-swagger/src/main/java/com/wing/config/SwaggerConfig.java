@@ -1,8 +1,10 @@
 package com.wing.config;
 
+import com.wing.controller.SwaggerController;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -38,7 +40,17 @@ public class SwaggerConfig {
                 .build());
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(apiInfo()).select()
-                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                /*
+                    RequestHandlerSelectors：配置要扫描接口的方式
+                    any：扫描全部
+                    none：不扫描
+                    basePackage：指定要扫描的包
+                    withMethodAnnotation：扫描方法上的注解
+                    withClassAnnotation：扫描类上的注解，参数是一个注解的反射对象
+                 */
+                //.apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                //.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
+                .apis(RequestHandlerSelectors.basePackage("com.wing.controller"))
                 .paths(PathSelectors.any())
                 .build().globalRequestParameters(requestParameter);
     }
