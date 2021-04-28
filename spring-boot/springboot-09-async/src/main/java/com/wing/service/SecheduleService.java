@@ -17,7 +17,6 @@ public class SecheduleService {
               30  15   10   *   *    ?            每天10点15分30秒执行一次
               30 0/5 10,18 *    *    ?            每天10点和18点，每隔5分钟执行一次
               0   15  10   ?   *     1-6          每个月的周一到周六 10：15分执行
-
      */
     @Scheduled(cron = "0/5 * * * * ? ")
     public void scheduleTest() {
