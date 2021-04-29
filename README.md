@@ -303,6 +303,44 @@ Spring framework, Spring Boot and even Spring Cloud...
               type: com.alibaba.druid.pool.DruidDataSource
       ```
       - Implementing the monitoring web via configure `Druid` special configuration.
+    - Integrate Mybatis for data persistence.
+      - Import the mybatis dependency.
+        ```xml
+        <dependency>
+          <groupId>org.mybatis.spring.boot</groupId>
+          <artifactId>mybatis-spring-boot-starter</artifactId>
+          <version>2.1.4</version>
+        </dependency>
+        ```
+      - Configure basic Mybatis configuration,including package alias and the location of mapper file.
+        ```yaml
+        # 集成Mybatis
+        mybatis.type-aliases-package=com.wing.pojo
+        mybatis.mapper-locations=classpath:mybatis/mapper/*.xml
+        ```
+      - Create mapper interface like the following.
+       ```java
+          // @Mapper：表示这是一个Mybatis的mapper类 - Dao
+          @Mapper
+          @Repository
+          public interface UserMapper {
+              // 查询所有用户
+              List<User> queryAllUsers();
+          
+              // 根据ID查询用户
+              User queryUserById(int id);
+          
+              // 添加用户
+              int addUser(User user);
+          
+              // 修改用户信息
+              int updateUser(User user);
+          
+              // 删除用户
+              int deleteUserById(int id);          
+          }
+       ```
+      - CRUD operation,configure the mapper file according to the specific operation, such as `select`,`insert`,`update` and `delete`.        
       
     
 
