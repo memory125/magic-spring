@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/consumer-server/consumer-server.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/consumer-server/consumer-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-07-shiro/hello-shiro/hello-shiro.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-07-shiro/hello-shiro/hello-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/magic-spring.iml" filepath="$PROJECT_DIR$/.idea/magic-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/provider-server/provider-server.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/provider-server/provider-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-annotation-06/spring-annotation-06.iml" filepath="$PROJECT_DIR$/spring-branch/spring-annotation-06/spring-annotation-06.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-aop-09/spring-aop-09.iml" filepath="$PROJECT_DIR$/spring-branch/spring-aop-09/spring-aop-09.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-branch/spring-appconfig-07/spring-appconfig-07.iml" filepath="$PROJECT_DIR$/spring-branch/spring-appconfig-07/spring-appconfig-07.iml" />
@@ -27,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-07-shiro.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-07-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-08-swagger/springboot-08-swagger.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-08-swagger/springboot-08-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-09-async/springboot-09-async.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-09-async/springboot-09-async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/springboot-10-dubbo-zookeeper.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/springboot-10-dubbo-zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" />

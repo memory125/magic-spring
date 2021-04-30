@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-08-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-09-async/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/provider-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/consumer-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
