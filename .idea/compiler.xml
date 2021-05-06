@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springmvc-07-ajax" />
         <module name="springmvc-04-controller" />
+        <module name="rabbitmq-producer" />
         <module name="spring-di-04" />
         <module name="springboot-02-configuration" />
         <module name="springboot-shiro" />
@@ -19,8 +20,10 @@
         <module name="springmvc-03-annotation" />
         <module name="spring-mybatis-10" />
         <module name="spring-transaction-11" />
+        <module name="springboot-11-rabbitmq" />
         <module name="spring-appconfig-07" />
         <module name="springmvc-01-servlet" />
+        <module name="rabbitmq-consumer" />
         <module name="springmvc-02-hellomvc" />
         <module name="spring-ioc-03" />
         <module name="spring-annotation-06" />
@@ -46,6 +49,8 @@
       <module name="consumer-server" target="1.8" />
       <module name="hello-shiro" target="1.5" />
       <module name="provider-server" target="1.8" />
+      <module name="rabbitmq-consumer" target="1.8" />
+      <module name="rabbitmq-producer" target="1.8" />
       <module name="spring-03-annotation" target="1.5" />
       <module name="spring-annotation-06" target="1.5" />
       <module name="spring-aop-09" target="1.5" />
@@ -71,6 +76,7 @@
       <module name="springboot-08-swagger" target="1.8" />
       <module name="springboot-09-async" target="1.8" />
       <module name="springboot-10-dubbo-zookeeper" target="1.5" />
+      <module name="springboot-11-rabbitmq" target="1.5" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
@@ -87,6 +93,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer-server" options="-parameters" />
       <module name="provider-server" options="-parameters" />
+      <module name="rabbitmq-consumer" options="-parameters" />
+      <module name="rabbitmq-producer" options="-parameters" />
       <module name="springboot-01-helloworld" options="-parameters" />
       <module name="springboot-02-configuration" options="-parameters" />
       <module name="springboot-03-web" options="-parameters" />

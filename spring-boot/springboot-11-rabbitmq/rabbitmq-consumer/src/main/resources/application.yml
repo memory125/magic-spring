@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  #给项目来个名字
+  application:
+    name: consumer
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 192.168.206.128
+    port: 5672
+    username: wing
+    password: 123456

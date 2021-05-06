@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-07-shiro</module>
         <module>springboot-10-dubbo-zookeeper</module>
+        <module>springboot-11-rabbitmq</module>
     </modules>
 
 </project>
