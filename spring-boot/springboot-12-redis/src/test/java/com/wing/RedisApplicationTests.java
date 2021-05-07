@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
-
+/**
+ * @author memory125
+ */
 @SpringBootTest
 class RedisApplicationTests {
 
