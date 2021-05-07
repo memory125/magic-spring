@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/spring-boot/springboot-10-dubbo-zookeeper/consumer-server/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-11-rabbitmq/rabbitmq-producer/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-11-rabbitmq/rabbitmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/springboot-12-redis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
