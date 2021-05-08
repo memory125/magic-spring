@@ -1,0 +1,14 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: minio
+    servlet:
+      multipart:
+        maxFileSize: 500MB
+        maxRequestSize: 500MB
+minio:
+  url: http://192.168.206.130:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: "file-test"

@@ -28,6 +28,7 @@
         <module name="springmvc-02-hellomvc" />
         <module name="spring-ioc-03" />
         <module name="spring-annotation-06" />
+        <module name="springboot-13-minio" />
         <module name="spring-ioc-02" />
         <module name="spring-proxy-08" />
         <module name="springmvc-06-ssm-integration" />
@@ -79,6 +80,7 @@
       <module name="springboot-10-dubbo-zookeeper" target="1.5" />
       <module name="springboot-11-rabbitmq" target="1.5" />
       <module name="springboot-12-redis" target="1.8" />
+      <module name="springboot-13-minio" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
@@ -106,6 +108,7 @@
       <module name="springboot-08-swagger" options="-parameters" />
       <module name="springboot-09-async" options="-parameters" />
       <module name="springboot-12-redis" options="-parameters" />
+      <module name="springboot-13-minio" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
     </option>
   </component>
