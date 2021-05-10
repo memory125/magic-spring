@@ -39,6 +39,7 @@
         <module name="provider-server" />
         <module name="spring-autowire-05" />
         <module name="spring-aop-09" />
+        <module name="springboot-14-kafka" />
         <module name="springmvc-05-json" />
         <module name="springboot-05-mybatis" />
         <module name="springboot-10-dubbo-zookeeper" />
@@ -81,6 +82,7 @@
       <module name="springboot-11-rabbitmq" target="1.5" />
       <module name="springboot-12-redis" target="1.8" />
       <module name="springboot-13-minio" target="1.8" />
+      <module name="springboot-14-kafka" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springmvc-01-servlet" target="1.5" />
       <module name="springmvc-02-hellomvc" target="1.5" />
@@ -109,6 +111,7 @@
       <module name="springboot-09-async" options="-parameters" />
       <module name="springboot-12-redis" options="-parameters" />
       <module name="springboot-13-minio" options="-parameters" />
+      <module name="springboot-14-kafka" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
     </option>
   </component>
