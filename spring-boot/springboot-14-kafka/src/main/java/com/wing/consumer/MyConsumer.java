@@ -11,7 +11,7 @@ import java.util.Optional;
  */
 @Component
 public class MyConsumer {
-    //这里便是监听了xiaobaii，只要程序不停止就会持续消费！
+    //这里便是监听了wing，只要程序不停止就会持续消费！
     @KafkaListener(topics = "wing")
     public void listen(ConsumerRecord<?,String> record) {
         Optional<?> kafkaMessage = Optional.ofNullable(record.value());
