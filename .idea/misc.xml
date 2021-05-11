@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/spring-boot/springboot-12-redis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-13-minio/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/springboot-14-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/springboot-15-mongodb/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
