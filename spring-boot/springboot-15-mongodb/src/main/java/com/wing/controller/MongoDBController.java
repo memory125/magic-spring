@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("/user")
 public class MongoDBController {
@@ -16,9 +19,14 @@ public class MongoDBController {
     @RequestMapping(value="/add")
     public String saveUser() {
         User user = new User();
-        user.setId(11);
-        user.setAge(33);
-        user.setName("Jack");
+        List<String> list = new ArrayList<>();
+        user.setId(12);
+        user.setAge(36);
+        user.setName("David");
+        list.add("身份证");
+        list.add("学生卡");
+        list.add("饭卡");
+        user.setCards(list);
         userService.saveUser(user);
         return "ok";
     }
