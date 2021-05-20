@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author memory125
@@ -119,9 +119,85 @@ public class ConvertController {
         //注意：在4.1.11之后hexStrToStr将改名为hexToStr
         String raw = Convert.hexToStr(hex2, CharsetUtil.CHARSET_UTF_8);
 
-        String resultStr = HUTOOL_CONVERT + "String to HEX Type---->" + hex1 + "  == HEX To String Type---->" + raw;;
+        String resultStr = HUTOOL_CONVERT + "String to HEX Type---->" + hex1 + "  == HEX To String Type---->" + raw;
 
         return resultStr;
     }
 
+    @RequestMapping("/c7")
+    @ResponseBody
+    public String test7() {
+        String a = "我是一个小小的可爱的字符串";
+
+        //结果为："\\u6211\\u662f\\u4e00\\u4e2a\\u5c0f\\u5c0f\\u7684\\u53ef\\u7231\\u7684\\u5b57\\u7b26\\u4e32"
+        String unicode = Convert.strToUnicode(a);
+
+        //结果为："我是一个小小的可爱的字符串"
+        String raw = Convert.unicodeToStr(unicode);
+
+        String resultStr = HUTOOL_CONVERT + "String To Unicode Type---->" + unicode + "  == Unicode To String Type---->" + raw;
+
+        return resultStr;
+    }
+
+    @RequestMapping("/c8")
+    @ResponseBody
+    public String test8() {
+        String a = "我不是乱码";
+        //转换后result为乱码
+        String result = Convert.convertCharset(a, CharsetUtil.UTF_8, CharsetUtil.ISO_8859_1);
+        String raw = Convert.convertCharset(result, CharsetUtil.ISO_8859_1, "UTF-8");
+
+        String resultStr = HUTOOL_CONVERT + "Charset To ISO8859_1 Type---->" + result + "  == Charset To UTF-8 Type---->" + raw;
+
+        return resultStr;
+    }
+
+    @RequestMapping("/c9")
+    @ResponseBody
+    public String test9() {
+        long a = 4535345;
+
+        //结果为：75
+        long minutes = Convert.convertTime(a, TimeUnit.MILLISECONDS, TimeUnit.MINUTES);
+
+        String minutesStr = Long.toString(minutes);
+
+        String resultStr = HUTOOL_CONVERT + "Long To Minutes Type---->" + minutesStr;
+
+        return resultStr;
+    }
+
+    @RequestMapping("/c10")
+    @ResponseBody
+    public String test10() {
+        double a = 67556.32;
+
+        //结果为："陆万柒仟伍佰伍拾陆元叁角贰分"
+        String digitUppercase = Convert.digitToChinese(a);
+
+        String resultStr = HUTOOL_CONVERT + "Double To Chinese AMT Upper Type---->" + digitUppercase;
+
+        return resultStr;
+    }
+
+    @RequestMapping("/c11")
+    @ResponseBody
+    public String test11() {
+        //去包装
+        Class<?> wrapClass = Integer.class;
+
+        //结果为：int.class
+        Class<?> unWraped = Convert.unWrap(wrapClass);
+
+        //包装
+        Class<?> primitiveClass = long.class;
+
+        //结果为：Long.class
+        Class<?> wraped = Convert.wrap(primitiveClass);
+
+        String resultStr = HUTOOL_CONVERT + "Class To Unwraped Type---->" + unWraped + "  == Wrapped Class To Class Type---->" + wraped;
+
+        return resultStr;
+    }
 }
