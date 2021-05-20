@@ -9,7 +9,7 @@
     <bean id="mySQLImpl" class="com.wing.pojo.UserDaoMySQLImpl" />
     <bean id="sqlServerImpl" class="com.wing.pojo.UserDaoSQLServerImpl" />
 
-    <bean id="userServiceImpl" class="com.wing.service.impl.UserServiceImpl">
+    <bean id="userServiceImpl" class="com.wing.service.UserServiceImpl">
     <!--
         ref: 引用Spring容器中创建号的对象
         value: 具体的值，具体数据类型
