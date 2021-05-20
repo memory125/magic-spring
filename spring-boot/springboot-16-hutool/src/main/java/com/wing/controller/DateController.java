@@ -1,5 +1,6 @@
 package com.wing.controller;
 
+import cn.hutool.core.date.ChineseDate;
 import cn.hutool.core.date.DateUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,6 +54,37 @@ public class DateController {
         String formatTime = DateUtil.formatTime(date);
 
         String resultStr = HUTOOL_DATE + "Date Format ---->" + format + " ==Date FormatDate---->" + formatDate + " ==Date FormatDateTime---->" + formatDateTime + "  == Date FormatTime---->" + formatTime;
+
+        return resultStr;
+    }
+
+    @RequestMapping("/d3")
+    @ResponseBody
+    public String test3() {
+        //通过公历构建
+        ChineseDate date = new ChineseDate(DateUtil.parseDate("2020-01-25"));
+        // 一月
+        date.getChineseMonth();
+        // 正月
+        date.getChineseMonthName();
+        // 初一
+        date.getChineseDay();
+        // 庚子
+        date.getCyclical();
+        // 生肖：鼠
+        date.getChineseZodiac();
+        // 传统节日（部分支持，逗号分隔）：春节
+        date.getFestivals();
+        // 庚子鼠年 正月初一
+        date.toString();
+
+        String resultStr = HUTOOL_DATE + "ChineseDate getChineseMonth---->" + date.getChineseMonth()
+                + " ==ChineseDate getChineseMonthName---->" + date.getChineseMonthName()
+                + " ==ChineseDate getChineseDay---->" + date.getChineseDay()
+                + "  == ChineseDate getCyclical---->" +  date.getCyclical()
+                + " ==ChineseDate getCyclical---->" + date.getCyclical()
+                + " ==ChineseDate getChineseZodiac---->" + date.getChineseZodiac()
+                + " ==ChineseDate toString---->" +  date.toString();
 
         return resultStr;
     }
