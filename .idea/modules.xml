@@ -37,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-13-minio/springboot-13-minio.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-13-minio/springboot-13-minio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-14-kafka/springboot-14-kafka.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-14-kafka/springboot-14-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-15-mongodb/springboot-15-mongodb.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-15-mongodb/springboot-15-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-16-hutool/springboot-16-hutool.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-16-hutool/springboot-16-hutool.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/spring-boot/springboot-07-shiro/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-01-servlet/springmvc-01-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" filepath="$PROJECT_DIR$/spring-mvc/springmvc-02-hellomvc/springmvc-02-hellomvc.iml" />

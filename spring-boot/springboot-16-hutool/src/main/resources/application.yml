@@ -1,0 +1,9 @@
+server:
+  port: 8007
+  servlet:
+    encoding:
+      charset: utf-8
+
+spring:
+  application:
+    name: hutool
